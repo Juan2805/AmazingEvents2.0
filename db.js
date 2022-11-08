@@ -182,14 +182,14 @@ const card = (event) => {
 }
 
 const insertCard = (id,events) => {
-    const cardContainer = document.querySelector(id);
+    const cardContainer = document.querySelector(id)
     
     events.map(event => {
         cardContainer.insertAdjacentHTML("beforeend", card(event))
     })
 }
 
-var URLactual = window.location.pathname.split('/').pop();
+var URLactual = window.location.pathname.split('/').pop()
 
 switch (URLactual) {
     case 'index.html': insertCard('#cards_container_home',data.eventos); break;
