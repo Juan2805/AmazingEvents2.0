@@ -192,6 +192,7 @@ const insertCard = (id,events) => {
 var URLactual = window.location.pathname.split('/').pop()
 
 switch (URLactual) {
+    case '': insertCard('#cards_container_home',data.eventos); break;
     case 'index.html': insertCard('#cards_container_home',data.eventos); break;
     case 'upcomingEvents.html': insertCard('#cards_container_upcoming',upcomingEvents); break;
     case 'pastEvents.html': insertCard('#cards_container_past',pastEvents); break;
